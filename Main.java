@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main
 {
     public static void main(String[] args)
@@ -19,5 +21,17 @@ public class Main
         else
             System.out.println("Entered Number " + n + " is not Palindrome");
 
+        GCD gcd = new GCD();
+        int greatestCommonDivisor = gcd.findGreatestDivisor(20,15);
+        System.out.println("Greatest Common factor: " + greatestCommonDivisor + " (GCD)");
+
+        int nu = 12;
+        Divisors divs = new Divisors();
+        ArrayList<Integer> divisors = divs.findDivisors(nu);
+        System.out.println("Output: " + divisors);
+        System.out.print("Explanation: The divisors of " + nu + " are ");
+        for(int a: divisors) {
+            System.out.print(a + ", ");
+        }
     }
 }
