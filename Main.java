@@ -32,6 +32,23 @@ public class Main
         System.out.print("Explanation: The divisors of " + nu + " are ");
         for(int a: divisors) {
             System.out.print(a + ", ");
+
         }
+        System.out.println();
+
+        Prime prime = new Prime();
+        boolean p = prime.isPrime(10);
+        if(p)
+            System.out.println("It is a Prime number");
+        else
+            System.out.println("not a prime number");
+
+
+
+        // Armstrong Number
+
+        Armstrong a = new Armstrong();
+        boolean res = a.checkNum(153);
+        System.out.println(res);
     }
 }
